@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Login</ion-card-title>
+    </ion-card-header>
+  <ion-card-content>
+  <form [formGroup] = "formularioLogin" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label>Usuario </ion-label>
+      <ion-input formControlName = "nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password </ion-label>
+      <ion-input formControlName = "password" type="password"></ion-input>
+    </ion-item>
+  </form>
+    <ion-button (click) = "Ingresar()">Ingresar</ion-button>
+    <ion-button [routerLink]="['/register']">Registrarse</ion-button>
+  </ion-card-content>
+</ion-card>
+</ion-content>
+

@@ -1,0 +1,22 @@
+<ion-content>
+    <ion-card-header style="background-color: rgb(56, 56, 56);">
+      <ion-card-title>Registro</ion-card-title>
+    </ion-card-header>
+  <form [formGroup]="formularioLogin" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Usuario </ion-label>
+      <ion-input formControlName="nombre" type="text" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Correo Electronico </ion-label>
+      <ion-input formControlName="email" type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña </ion-label>
+      <ion-input formControlName="password" type="password"></ion-input>
+    </ion-item>
+    <ion-button expand="full" type="submit" (click)="Registrar()">Crear</ion-button>
+    <ion-button expand="full" (click)="cancelar()">Cancelar</ion-button>
+  </form>
+</ion-content>
+

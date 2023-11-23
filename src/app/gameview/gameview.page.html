@@ -1,0 +1,21 @@
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let juego of juegos">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-col size="12" size-md="3">
+        <ion-img [src]="juego.imagen" class="img-responsive mt-4"></ion-img>
+      </ion-col>
+      <ion-col size="12" size-md="6">
+        <ion-text>
+          <h1>{{juego.titulo | uppercase}}</h1>
+          <p>{{juego.descripcion}}</p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
