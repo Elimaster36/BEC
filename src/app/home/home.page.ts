@@ -17,6 +17,7 @@ export class HomePage {
   user!: string;
   buscar!: string;
   searchQuery: string = '';
+  //hola muy buenas
 
   constructor(private gameservice: GamesService, private router: Router, private sesion: CuentasService, private busqueda:SearchService) {
 
